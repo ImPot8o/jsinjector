@@ -2,18 +2,18 @@
 <html>
 <head>
     <title>Bookmarklet Injector</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Bookmarklet Injector</h1>
         <p>Enter your bookmarklet code below:</p>
         <textarea id="bookmarkletCode" rows="5" cols="50"></textarea>
-        <button onclick="injectBookmarklet()">Inject Bookmarklet</button>
+        <button class="inject" onclick="injectBookmarklet()">Inject Bookmarklet</button>
         <br><br>
-        <button onclick="presetVengeance()">Vengeance</button>
-        <button onclick="presetAboutBlankOpener()">about:blank opener</button>
-        <button onclick="presetCarAxleClient()">Car Axle Client</button>
+        <button class="preset" onclick="presetVengeance()">Vengeance</button>
+        <button class="preset" onclick="presetAboutBlankOpener()">about:blank opener</button>
+        <button class="preset" onclick="presetCarAxleClient()">Car Axle Client</button>
     </div>
     <script src="script.js"></script>
 </body>
